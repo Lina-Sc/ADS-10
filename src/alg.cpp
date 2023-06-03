@@ -11,7 +11,7 @@ int fact(int n) {
     return 1;
 }
 std::vector<char> getPerm(const Tree& tree, int n) {
- if (tree.getSize() == 0 || n > fact(tree.getSize()))
+  if (tree.getSize() == 0 || n > fact(tree.getSize()))
         return {};
     if (tree.getCharacter_set() == '*')
         n--;
